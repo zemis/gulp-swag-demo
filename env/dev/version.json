@@ -1,0 +1,5 @@
+{
+  "Lambda":{
+    "create_article": "$LATEST"
+  }
+}

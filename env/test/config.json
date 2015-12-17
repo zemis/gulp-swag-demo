@@ -1,0 +1,26 @@
+{
+  "AWS":{
+    "region"    : "us-west-2",
+    "DynamoDB"  : {
+      "apiVersion" : "2012-08-10",
+      "endpoint"   : "http://localhost:8000"
+    },
+    "Lambda"    : { "apiVersion" : "2015-03-31" },
+    "APIGateway": { "apiVersion" : "2015-07-09" }
+  },
+
+  "deployment": {
+    "api"        : { "name": "MyNewApi" },
+    "credentials": "",
+    "stage"      : {
+      "name"       : "test",
+      "description": "for local testing",
+      "variables"  : { 
+        "tableNamespace": "test_",
+        "dynamoDbEndpoint"    : "http://localhost:8000",
+        "dynamoDbApiVersion"  : "2012-08-10",
+        "dynamoDbRegion"      : "us-west-2"
+      }
+    }
+  }
+}

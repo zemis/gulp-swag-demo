@@ -1,0 +1,6 @@
+{
+  "Lambda":{
+    "lambdaRootPost": "$LATEST",
+    "lambdaRootGet": 2
+  }
+}

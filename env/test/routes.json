@@ -1,0 +1,9 @@
+{
+  "/articles": {
+    "methods": {
+       "POST": "create_article"
+    },
+    "enableCORS": true,
+    "role": ""
+  }
+}

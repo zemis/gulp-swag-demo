@@ -1,0 +1,11 @@
+{
+  "db": {
+    "tableNamespace": "$stageVariables.tableNamespace",
+    "config": {
+      "endpoint"  : "$stageVariables.dynamoDbEndpoint",
+      "apiVersion": "$stageVariables.dynamoDbApiVersion",
+      "region"    : "$stageVariables.dynamoDbRegion"
+    }
+  },
+  "article": $input.json('$.article')
+}

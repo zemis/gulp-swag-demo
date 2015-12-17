@@ -1,0 +1,21 @@
+{
+  "name": "create_article",
+  "version": "0.0.1",
+  "description": "Creates an blog article",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "apigateway",
+    "dynamodb"
+  ],
+  "author": "Jerome Riga",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.2.15",
+    "uuid": "^2.0.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "undef": true,
+  "unused": true,
+  "predef": [
+    "before",
+    "after",
+    "it",
+    "describe",
+    "beforeEach",
+    "afterEach",
+    "expect",
+    "module",
+    "exports",
+    "process",
+    "require" ]
+}

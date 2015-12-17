@@ -1,0 +1,14 @@
+{
+  "/": {
+    "methods": {
+      "POST": "lambdaRootPost",
+      "GET" : {
+        "enableCORS": false,
+        "role": "arn:aws:iam::1111111111:role/APIGatewayLambdaExecRole",
+        "name": "lambdaRootGet"
+      }
+    },
+    "enableCORS": true,
+    "role": "arn:aws:iam::1111111111:role/APIGatewayLambdaExecRole"
+  }
+}
