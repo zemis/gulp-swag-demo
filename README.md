@@ -53,23 +53,23 @@ $ cp -r env/dev env/alpha
 ```
 
 2. Create Api Gateway execution role with the following permissions:
-- lambda:InvokeFunction
-- iam:PassRole
+   * lambda:InvokeFunction
+   * iam:PassRole
 
 3. Create the Lambda execution role with the following permissions:
-- AmazonDynamoDBFullAccess
-- [lamdba permission](http://docs.aws.amazon.com/lambda/latest/\
+   * AmazonDynamoDBFullAccess
+   * [lamdba permission](http://docs.aws.amazon.com/lambda/latest/\
 dg/intro-permission-model.html)
 
 4. Edit env/alpha/config.json
-- set your desired AWS region
-- set your dynamoDB endpoint in the same region
-- set the deployment.credentials to the ARN created in step 2
-- set the deployment.api.name 
-- set the deployment.stage.name
+   * set your desired AWS region
+   * set your dynamoDB endpoint in the same region
+   * set the deployment.credentials to the ARN created in step 2
+   * set the deployment.api.name 
+   * set the deployment.stage.name
 
 5. Edit env/alpha/routes.json
-- set role to the ARN created in step 3
+   * set role to the ARN created in step 3
 
 6. Edit env/alpha/version.json (optional at this stage). This file allows you to deploy a specific version of lambda handler to your API.
 
